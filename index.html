@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Young Foundry Apps</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root{
+      --navy:#07111E;
+      --navy-light:#12233B;
+      --gold:#C9A84C;
+      --cream:#F5EFE0;
+      --text:#D6DCE5;
+      --card:rgba(255,255,255,0.04);
+      --border:rgba(201,168,76,0.15);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'DM Sans',sans-serif;
+      background:
+        radial-gradient(circle at top right,#1A2D4A 0%,transparent 30%),
+        linear-gradient(160deg,var(--navy),#0D1B2A 55%,#152841 100%);
+      color:var(--cream);
+      min-height:100vh;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .hero{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .logo{
+      width:90px;
+      height:90px;
+      border-radius:20px;
+      background:linear-gradient(135deg,var(--gold),#A07830);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 24px;
+      color:#07111E;
+      font-size:34px;
+      font-weight:700;
+      box-shadow:0 10px 40px rgba(201,168,76,0.25);
+    }
+
+    h1{
+      font-size:48px;
+      margin-bottom:14px;
+      color:var(--cream);
+    }
+
+    .subtitle{
+      color:var(--text);
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+      line-height:1.7;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:24px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:28px;
+      transition:0.3s;
+      backdrop-filter:blur(8px);
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      border-color:rgba(201,168,76,0.4);
+      box-shadow:0 18px 50px rgba(0,0,0,0.4);
+    }
+
+    .emoji{
+      font-size:44px;
+      margin-bottom:18px;
+    }
+
+    .card h2{
+      font-size:26px;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:var(--text);
+      line-height:1.6;
+      margin-bottom:24px;
+      min-height:70px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:linear-gradient(135deg,var(--gold),#A07830);
+      color:#07111E;
+      padding:12px 22px;
+      border-radius:12px;
+      font-weight:700;
+      transition:0.25s;
+    }
+
+    .btn:hover{
+      transform:scale(1.04);
+    }
+
+    footer{
+      text-align:center;
+      margin-top:70px;
+      color:#7F8DA3;
+      font-size:14px;
+    }
+
+    @media(max-width:700px){
+
+      h1{
+        font-size:34px;
+      }
+
+      .subtitle{
+        font-size:16px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section class="hero">
+
+      <div class="logo">
+        YF
+      </div>
+
+      <h1>Young Foundry Apps</h1>
+
+      <p class="subtitle">
+        Interactive learning experiences, computational thinking tools,
+        logic games, and coding playgrounds for young innovators.
+      </p>
+
+    </section>
+
+    <section class="grid">
+
+      <div class="card">
+
+        <div class="emoji">🧠</div>
+
+        <h2>ThinkFirst</h2>
+
+        <p>
+          Learn computational thinking, sequencing, loops,
+          conditionals, and problem solving through interactive challenges.
+        </p>
+
+        <a class="btn" href="thinkfirst.html">
+          Launch App
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <div class="emoji">⚡</div>
+
+        <h2>AlgoLab</h2>
+
+        <p>
+          Explore algorithms visually with sorting,
+          searching, and data structure simulations designed for students.
+        </p>
+
+        <a class="btn" href="algolab.html">
+          Launch App
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <div class="emoji">🧩</div>
+
+        <h2>Logic Flow Designer</h2>
+
+        <p>
+          Build flowcharts, create logic systems,
+          and design computational workflows visually.
+        </p>
+
+        <a class="btn" href="yf-logic-flow-designer.html">
+          Launch App
+        </a>
+
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Young Foundry • Built for curious minds
+    </footer>
+
+  </div>
+
+</body>
+</html>
